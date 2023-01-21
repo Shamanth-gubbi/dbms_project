@@ -1,20 +1,4 @@
 ﻿
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% Free To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
-
-
-
-/* =============================================================
-   GENERAL STYLES
- ============================================================ */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -42,9 +26,7 @@ body {
 }
 
 
-/* =============================================================
-   NAVBAR & MENU STYLES
- ============================================================ */
+
 
 .right-div {
     float: right; 
@@ -85,9 +67,7 @@ background-color: black;
 border: 1px solid black;
 }
 
-    /* =============================================================
-   DASHBOARD STYLES
- ============================================================ */
+
 
 .img-comments {
    border: 3px double #e1e1e1;
@@ -111,7 +91,7 @@ height: 60px;
     position: absolute;
     border-top-color: #F70E62;
     border-width: 15px;
-    margin-left: 15px;
+    margin-left: -15px;
 }
 
 .chat-widget-left {
@@ -202,9 +182,7 @@ height: 60px;
     background-color:transparent;
 }
 
-/* =============================================================
-   FOOTER SECTION STYLES
- ============================================================ */
+
 .footer-section {
     padding:25px 50px 25px 50px;
     color:#000;

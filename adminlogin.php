@@ -7,14 +7,10 @@ $_SESSION['alogin']='';
 }
 if(isset($_POST['login']))
 {
- //code for captach verification
-// if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
-//         echo "<script>alert('Incorrect verification code');</script>" ;
-//     } 
-//         else {
+ 
 
 $username=$_POST['username'];
-// $password=md5($_POST['password']);
+
 $password=$_POST['password'];
 $sql ="SELECT UserName,Password FROM admin WHERE UserName=:username and Password=:password";
 $query= $dbh -> prepare($sql);
@@ -29,7 +25,7 @@ echo "<script type='text/javascript'> document.location ='admin/dashboard.php'; 
 } else{
 echo "<script>alert('Invalid Details');</script>";
 }
-// }
+
 }
 ?>
 <!DOCTYPE html>
@@ -40,27 +36,27 @@ echo "<script>alert('Invalid Details');</script>";
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Online Library Management System</title>
-    <!-- BOOTSTRAP CORE STYLE  -->
+    
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONT AWESOME STYLE  -->
+    
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!-- CUSTOM STYLE  -->
+
     <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- GOOGLE FONT -->
+   
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
 </head>
 <style>
     .bg-image {
-  /* The image used */
+  
   background-image: url("assets/img/UVCE_HomeBox.jpg");
   
 
   
-  /* Full height */
+ 
   height: 100%; 
   
-  /* Center and scale the image nicely */
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,9 +68,9 @@ echo "<script>alert('Invalid Details');</script>";
 </style>
 <body>
 
-    <!------MENU SECTION START-->
+
 <?php include('includes/header.php');?>
-<!-- MENU SECTION END-->
+
 <div class="content-wrapper ">
 
 <div class="container">
@@ -84,7 +80,7 @@ echo "<script>alert('Invalid Details');</script>";
 </div>
 </div>
              
-<!--LOGIN PANEL START-->           
+         
 <div class="row">
 <div class="col-sm-4 " style="margin-right:200px;">
     <img src="assets/img/uvce_vector.png" alt=""style="height:300px;width:450px;margin-right:500px;">
@@ -105,10 +101,7 @@ echo "<script>alert('Invalid Details');</script>";
 <label>Password</label>
 <input class="form-control" type="password" name="password" autocomplete="off" required />
 </div>
- <!-- <div class="form-group">
-<label>Verification code : </label>
-<input type="text"  name="vercode" maxlength="5" autocomplete="off" required style="width: 150px; height: 25px;" />&nbsp;<img src="captcha.php">
-</div>   -->
+
 
  <button type="submit" name="login" class="btn btn-info">LOGIN </button>
 </form>
@@ -116,16 +109,16 @@ echo "<script>alert('Invalid Details');</script>";
 </div>
 </div>
 </div>  
-<!---LOGIN PABNEL END-->            
+          
              
  
     </div>
     </div>
-     <!-- CONTENT-WRAPPER SECTION END-->
+    
     <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
+    
     <script src="assets/js/bootstrap.js"></script>
-      <!-- CUSTOM SCRIPTS  -->
+      
     <script src="assets/js/custom.js"></script>
 </script>
 </body>
